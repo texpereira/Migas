@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="./assets/img/logo-icon.png">
+    <title>Migas</title>
+    <!-- Enlace a cuenta fontawesome -->
+    <script src="https://kit.fontawesome.com/31bbfb6081.js" crossorigin="anonymous"></script>
+    <!-- Enlace a las fuentes Poppins y Platypi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- CSS y Bootstrap -->
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+</head>
+
+<body>
+
+    <section id="navbar"> <!-- Navbar personalizado en bootstrap -->
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent p-3">
+            <div class="container-fluid md">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/img/logo.png" alt="Migas" class="navbar-icon" >
+                    <span class="brand-text platypi-font">MIGAS - Sandwich -</span>
+                </a>
+                <div id="toggler-navbar" class="container-left">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarTogglerDemo02" class="collapse navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-4 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#inicio">Inicio</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#productos">Nuestros Productos</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#acerca">Acerca de nosotros</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+    <section id="inicio" class="py-4" style="background: image-set('MiniArribaBaja.jpg')"> <!-- seccion de inicio -->
+        
+        <div class="container">
+            <div id="contenedor" class="row justify-content-md-center">
+                            
+                    <div class="col-6 py-4 grid-item">
+                        <img src="./assets/img/MIGASBlanco.png" class="img-fluid" alt="Migas">
+                    </div>
+                    <div id="button" class="col-6 d-none d-md-block">
+                        <div id="border-button">
+                            <p class="button"><a href="https://api.whatsapp.com/send/?phone=%2B56983610557&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i>Contactanos</a></p>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <!-- Aquí va el contenido de "Productos" -->
+    </section>
+
+    <section id="productos">
+        <div class="brand-text platypi-font py-2" style="text-align: center; color: #ffffff; text-shadow: 2px 2px #bbb1b1;">
+            <h2 class="brand-text platypi-font">Productos</h2>
+        </div>
+            <article class="sandwiches-gallery">
+                <div class ="img-card">
+                    <div class="image-box">
+                        <img src="./assets/img/CheddarFrente.png"alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Sandwich Cheddar</h5>
+                        <p>Delicioso Sandwichcon Queso Cheddar</p>
+                    </div>
+                </div>
+                <div class ="img-card">
+                    <div class="image-box">
+                        <img src="./assets/img/EspinacaFrente.png"alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Sandwich Espinaca</h5>
+                        <p>Delicioso Sandwich con Espinaca</p>
+                    </div>
+                </div>
+                <div class ="img-card">
+                    <div class="image-box">
+                        <img src="./assets/img/HuevoFrente.png"alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Sandwich de Huevo</h5>
+                        <p>Delicioso Sandwich de Huevo</p>
+                    </div>
+                </div>
+                <div class ="img-card">
+                    <div class="image-box">
+                        <img src="./assets/img/PaltaFrente.png"alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Sandwich de Palta</h5>
+                        <p>Delicioso Sandwich de Palta</p>
+                    </div>
+                </div>
+                <div class ="img-card">
+                    <div class="image-box">
+                        <img src="./assets/img/logo.png"alt="">
+                    </div>
+                    <div class="content">
+                    </div>
+                </div>
+                <div class ="img-card">
+                    <div class="image-box">
+                        <img src="./assets/img/SalameFrente.jpg"alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Sandwich de Salame</h5>
+                        <p>Delicioso Sandwich de Salame/p>
+                    </div>
+                </div>
+                <div class ="img-card">
+                    <div class="image-box">
+                        <img src="./assets/img/PimentonFrente.png"alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Sandwich de Ave-Pimenton</h5>
+                        <p>Delicioso Sandwich de Ave-Pimenton</p>
+                    </div>
+                </div>
+                <div class ="img-card">
+                    <div class="image-box">
+                        <img src="./assets/img/TomateFrente.jpg"alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Sandwich de Tomate</h5>
+                        <p>Delicioso Sandwich de Tomate</p>
+                    </div>
+                </div>
+                <div class ="img-card">
+                    <div class="image-box">
+                        <img src="./assets/img/MiniFrente.png"alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Tabla de Mini Sandwich</h5>
+                        <p>Deliciosa tabla de Sandwiches</p>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+
+        <div id="postres" class=" py-2" >
+
+        </div>
+        
+    </section>
+        <!-- Aquí va el contenido de "Acerca de nosotros" -->
+    <section id="acerca">
+
+            <div class="brand-text platypi-font py-2" style="text-align: center; color: #ffffff; text-shadow: 2px 2px #bbb1b1;">
+                <h2 class="brand-text platypi-font">Acerca de nosotros</h2>
+            </div>
+    <div id="acerca" class="acerca">
+
+            <div class="contenedor col-12">
+                <img class="Migascollage" src="Migas-collage.png" alt="">
+            <div class="txt">
+                <h2 class="brand-text platypi-font" style="text-align: center;">Migas: Tu sanguchería de confianza</h2>
+                <p>
+                    En Migas, nuestra pasión es ofrecer sándwiches deliciosos, saludables y variados. Utilizamos pan de molde de miga, un tipo de pan suave y esponjoso, perfecto para adaptarse a cualquier relleno.
+                    
+                    Nuestros sándwiches son elaborados con ingredientes de calidad, sin aditivos ni conservantes, lo que garantiza un sabor natural y fresco. Son ideales para cafeterías, eventos, reuniones y cualquier ocasión.
+                    
+                    <br>¿Qué encontrarás en Migas?
+                    
+                    <br> Desde el clásico queso cheddar americano con cebolla caramelizada, champiñones y tocino, hasta el exquisito espinaca con queso azul. También ofrecemos opciones vegetarianas, como la pasta de huevo con palmito.
+                    <br> Pero no solo somos expertos en sándwiches. También tenemos una selección de dulces caseros que te harán agua la boca:
+                        <br> - Alfajores con manjar y coco.
+                        <br> - Rollos de canela irresistibles.
+                        <br> - Pie de limón, profiteroles, brownie de chocolate y nuez, y kuchen de nuez.
+                    <br> Todos disponibles en formato individual y cóctel, perfectos para acompañar un café o un té.
+                    
+                    <br>En Migas, nos preocupamos por brindar un servicio de calidad y satisfacer las necesidades de nuestros clientes. Contáctanos a través de nuestras redes sociales (Instagram y WhatsApp) para hacer tus pedidos, consultas o sugerencias. 
+                    
+                    Estaremos encantados de atenderte y hacer de tu experiencia en Migas algo inolvidable.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <div id="contacto">
+        <img src="footer.png" class="contacto" alt="">
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <h2 id="texto" class="brand-text platypi-font"><b>Contáctanos</b></h2>
+                    <h3 id="texto2"><b>Moneda, 1025. Local 135. Santiago, R.M.</h3>
+                </div>
+            </div>
+
+            <div class="grupo-2">
+                <div class="box2">
+                    <h3><b>Siguenos</b></h3>
+                    <div class="red-social">
+                        <a href="https://api.whatsapp.com/send/?phone=%2B56983610557&text&type=phone_number&app_absent=0" target="_blank">
+                            <img src="whatsapp.png" class="icono1" alt="WhatsApp">
+                        </a>
+                        <a href="https://www.instagram.com/migassandwichs/" target="_blank">
+                            
+                            <img src="instagram.png" class="icono2" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+|         </footer>
+     </div>
+    
+
+    <!-- JS de Bootstrap y  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>

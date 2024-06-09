@@ -1,0 +1,342 @@
+.brand-text {
+    color: #FFFFFF;
+}
+
+.platypi-font {
+    font-family: 'Platypi', sans-serif;
+}
+.navbar-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.nav-link.dropdown-toggle:hover {
+    color: #dcd514;
+}
+
+.navbar-nav a, .mi-clase-de-menu {
+    color: #FFFFFF;
+}
+
+.mi-clase-de-menu {
+    background-color: #000000;
+}
+
+.container, .header, .menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    align-items: center;
+    padding: 0 2cm;
+}
+.hide-header {
+    top: -10px;
+}
+
+.logo, .menu {
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo p, .menu a {
+    margin: 0;
+}
+
+.logo img {
+    height: 350px;
+}
+
+.menu a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Hace que el texto del menú siempre sea negro */
+.navbar-nav .dropdown-item {
+    color: #000000;
+    background-color: #FFFFFF; /* Asegura que el texto sea visible */
+}
+
+/* Cambia el color del texto a verde cuando pasas el cursor sobre él */
+.navbar-nav .dropdown-item:hover {
+    color: #dcd514;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.grid-item {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.grid-item .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rectangle {
+    position: absolute;
+    right: 3cm;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #dcd514;
+}
+
+.rectangle button {
+    display: block;
+    width: 100%;
+    color: #dcd514
+}
+.rectangle button a {
+    color: #dcd514;
+}
+
+button {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Agrega una imagen de fondo en la sección "Inicio" */
+.inicio-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('MiniArribaBaja.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.grid-item .content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.grid-item .content img {
+    width: 130%;
+}
+
+.rectangle {
+    position: absolute;
+    right: 5cm;
+    top: 60%;
+    transform: translateY(-60%);
+    width: 178px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rectangle button {
+    display: block;
+    width: 100%;
+}
+
+.productos-section {
+    background: black;
+}
+/* Estilos para la sección grid1 */
+.grid1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid1 .gallery {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+
+}
+
+.grid1 .gallery img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Estilos para la sección grid2 */
+.img-carousel {
+    width: 100px;
+    height: 400px;
+    object-fit: cover;
+}
+#carouselExampleIndicators {
+    width: 500px; /* Ajusta este valor según tus necesidades */
+    height: 500px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Esta propiedad centra el carrusel en la página */
+}
+
+.img-description {
+    color: #FFFFFF;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #bbb1b1;
+    font-size: 20px;
+}
+
+/* Estilos para la sección acercade*/
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.Migascollage {
+    width: 45%; /* Ajusta el tamaño de la imagen aquí */
+}
+
+.txt {
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(128, 128, 128, 0.5); /* Color del rectángulo */
+    border: 3px solid #dcd514;
+    border-radius: 30px;
+    color:#FFFFFF;
+    text-align: justify;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: justify; /* Justifica el texto */
+}
+
+/* Estilos para la sección contacto y footer */
+#contacto {
+    position: relative;
+}
+
+.contacto {
+    position: fijado;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    background-image: url('footer.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1px; /* Ajusta este valor para cambiar el espacio entre la imagen y el texto */
+}
+
+#texto {
+    position: absolute;
+    top: 41%; /* Ajusta estos valores según donde quieras colocar el texto */
+    left: 22%;
+}
+
+#texto2 {
+    position: absolute;
+    top: 50%; /* Ajusta estos valores según donde quieras colocar el texto */
+    left: 13%;
+}
+
+.icono1, .icono2 {
+    width: 120px; /* Ajusta este valor para cambiar el tamaño del icono */
+    height: 100px; /* Ajusta este valor para cambiar el tamaño del icono */
+    margin-right: 30px; /* Ajusta este valor para cambiar el espacio entre los iconos */
+}
+
+.icono1:hover, .icono2:hover {
+    opacity: 0.7; /* Ajusta este valor para cambiar la intensidad de la iluminación */
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color:#000000;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color:#FFFFFF;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+.pie-pagina .grupo-1 .box h3{
+    color:#FFFFFF;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.pie-pagina .grupo-2 {
+    color:#FFFFFF;
+}
+
+.pie-pagina .grupo-2 .box2{
+    position: absolute;
+    top: 35%;
+    left: 850px;
+}
+
+.red-social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pie-pagina .grupo3{
+    background-color: #000000;
+    padding: 1px 1px;
+    margin-bottom: 1px;
+    text-align: center;
+    color: #3d3838;
+}
+
+.pie-pagina .grupo3 small{
+    font-size: 20px;
+    top: 40%;
+}

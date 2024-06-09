@@ -1,0 +1,100 @@
+.body {
+    background-color: black;
+}
+
+.brand-text {
+    color: #FFFFFF;
+}
+
+.platypi-font {
+    font-family: 'Platypi', sans-serif;
+}
+/* Estilo para el icono del navbar */
+.navbar-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+/* Estilo para la sección con ID "inicio" */
+#inicio {
+    background-image: url('./assets/img/MiniArribaBaja.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+/* Estilo para el "boton de contacto" */
+.button a {
+    color: rgba(17, 195, 35, 0.797);
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0), -2px -2px 2px rgba(255, 255, 255, 0);
+    background-color: rgba(219, 209, 209, 0.382);
+    font-size: 30px;
+    border: 15px double rgba(255, 255, 255, 0.516);
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 3px;
+    transform: translate(70%, 350%);
+}
+
+/* Estilo para la sección con ID "productos" */
+#productos { /* fondo negro y patron personalizado */
+    background: radial-gradient(transparent 34%, #9fe346 35%, #9fe346 45%, transparent 46%), radial-gradient(circle at left, transparent 39%, #9fe34680 40%, #9fe34680 45%, transparent 46%), radial-gradient(circle at right, transparent 39%, #9fe34680 40%, #9fe34680 45%, transparent 46%);
+    background-size: 3em 3em;
+    background-color: #0c0707;
+    opacity: 1
+}
+
+/* Estilos para la sección sandwiches */
+.sandwiches-gallery {
+    width: min(100% - 30px, 840px);
+    margin-inline: auto;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cambio a 3 columnas iguales */
+    grid-gap: 1rem;
+
+}
+
+.img-card {
+    width: 200px;
+    height: 200px; /* Asegura que cada cuadro sea de 200px x 200px */
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; /* Evita que el contenido desborde */
+
+}
+
+.img-card .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.img-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.img-card:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
